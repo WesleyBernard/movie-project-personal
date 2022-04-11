@@ -1,6 +1,6 @@
 (function () {
 
-    const MOVIE_URL = `https://lateral-charming-rice.glitch.me/movies`;
+    const MOVIE_URL = `http://localhost:8080/movies`;
 
     function getOMDb(movieTitle) {
         return fetch(`http://www.omdbapi.com/?t=${movieTitle}&apikey=${TREVOR_OMDb_key}`)
