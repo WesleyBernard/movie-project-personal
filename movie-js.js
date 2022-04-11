@@ -21,9 +21,10 @@
                 let genres = data.Genre;
                 let plot = data.Plot;
                 let poster = data.Poster;
-                let rating = data.Ratings[0].Value;
+                let rating = parseInt(data.Ratings[0].Value);
                 let year = data.Year;
-                return addAMovie(title, director, genres, plot, poster, rating, year);
+                let actors = data.Actors
+                return addAMovie(title, director, genres, plot, poster, rating, year, actors);
             })
     }
 
@@ -42,7 +43,7 @@
     }
 
 
-    function addAMovie(title, director, genres, plot, poster, rating, year) {
+    function addAMovie(title, director, genres, plot, poster, rating, year, actors) {
         const MOVIE_INFO = {
             title: title,
             director: director,
@@ -51,6 +52,7 @@
             poster: poster,
             rating: rating,
             year: year,
+            actors: actors
         }
 
         const OPTIONS = {
