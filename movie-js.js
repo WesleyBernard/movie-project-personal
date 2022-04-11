@@ -154,7 +154,9 @@
                          <div class="card-body">
                              <h5 class="card-title">${movie.title}</h5>
                              <h6 class="card-subtitle mb-2 text-muted">${movie.year}</h6>
+                             <p class="card-text">Rating: ${movie.rating}/10</p>
                              <p class="card-text">${movie.plot}</p>
+                             <p class="card-text">${movie.actors}</p>
                              <div class="card-footer"><img src="${movie.poster}" alt="${movie.title} poster" width="200px"></div>
                        </div>
                      </div>`);
@@ -262,7 +264,9 @@
                          <div class="card-body">
                              <h5 class="card-title">${movie.title}</h5>
                              <h6 class="card-subtitle mb-2 text-muted">${movie.year}</h6>
+                             <p class="card-text">Rating: ${movie.rating}/10</p>
                              <p class="card-text">${movie.plot}</p>
+                             <p class="card-text">${movie.actors}</p>
                              <div class="card-footer"><img src="${movie.poster}" alt="${movie.title} poster" width="200px"></div>
                        </div>
                      </div>`);
