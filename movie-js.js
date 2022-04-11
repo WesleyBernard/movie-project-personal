@@ -22,7 +22,7 @@
                 let plot = data.Plot;
                 let poster = data.Poster;
                 let rating = parseInt(data.Ratings[0].Value);
-                let year = data.Year;
+                let year = parseInt(data.Year);
                 let actors = data.Actors
                 return addAMovie(title, director, genres, plot, poster, rating, year, actors);
             })
@@ -44,7 +44,7 @@
 
 
     function addAMovie(title, director, genres, plot, poster, rating, year, actors) {
-        const MOVIE_INFO = {
+        const MOVIE_INFO = [{
             title: title,
             director: director,
             genre: genres,
@@ -53,7 +53,7 @@
             rating: rating,
             year: year,
             actors: actors
-        }
+        }]
 
         const OPTIONS = {
             method: 'POST',
@@ -100,7 +100,7 @@
             year: year,
         }
         const OPTIONS = {
-            method: 'PATCH',
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
             },
