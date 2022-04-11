@@ -274,7 +274,7 @@
 
     $('#dblclickDeleteButton').click(function () {
         // let title = $('#deleteBox').val();
-        alert(targetTitle);
+        alert("movie deleted");
         deleteAMovie(targetTitle);
         $('#dblClickModal').addClass('hide');
         $('#moviePoster').removeClass('blur');
