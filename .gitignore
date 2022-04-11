@@ -1,0 +1,7 @@
+keys.js
+# MacOS
+.DS_Store
+
+# IntelliJ
+.idea/*
+*.iml

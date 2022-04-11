@@ -1,0 +1,162 @@
+.blur {
+    filter: blur(3px);
+    /*-webkit-filter: blur(8px);*/
+
+}
+body{
+    background-image: url("pexels-anna-tis-5633525.jpg");
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+}
+#mainButtonDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hide{
+    visibility: hidden;
+    display: none;
+}
+#editMovieModel{
+    position: fixed;
+    background-color: #c9c6c6;
+    top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: 275px;
+    border: #4077b6 solid 4px;
+    z-index: 5;
+}
+#editMovieButton{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+#closeEditWindowButton{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+#addMovieModel{
+    position: absolute;
+    background-color: #6786e8;
+    top: 250px;
+    left: 250px;
+    width: 350px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    border: solid red 4px;
+    border-radius: 2px;
+    z-index: 5;
+}
+#addMovieButton{
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+}
+#closeAddWindowButton{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}
+#addTitle{
+    height: 20px;
+    margin-top: 10px;
+}
+#dblClickModal{
+    position: fixed;
+    background-image: url("pexels-anna-tis-5633525.jpg");
+    bottom: 2%;
+    top:2%;
+    left: 10%;
+    width: auto;
+    height:auto;
+    /*padding-top: 2em;*/
+    /*padding-left: 2.75em;*/
+    border: solid #4f4c4c 4px;
+    border-radius: 2px;
+    /*padding-top: 2em;*/
+    /*padding-right: 3em;*/
+    /*padding-left: 3em;*/
+    /*padding-bottom: 2em;*/
+    padding: 2em;
+    z-index: 5;
+
+}
+#dblclickEditbutton{
+    position: absolute;
+    right: 2%;
+    bottom: 10px;
+    text-align: center;
+}
+#dblclickCloseButton{
+    position: absolute;
+    left: 2%;
+    bottom: 10px;
+    text-align: center;
+}
+#dblclickDeleteButton{
+    position: absolute;
+    left: 37%;
+    bottom: 10px;
+    text-align: center;
+}
+#dblClickRow{
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*justify-items: flex-end;*/
+    /*flex-direction: row;*/
+    /*align-items: end;*/
+    /*flex-wrap: wrap;*/
+}
+#dblClickDiv{
+    width: 100%;
+}
+body{
+    position: relative;
+}
+.posters{
+    height: 295px;
+    width: 195px;
+    margin: 6px;
+    border: solid #c20303 6px;
+    border-radius: 6px;
+
+}
+
+#moviePoster{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+input{
+    height: 1.5em;
+}
+button{
+    height: 1.5em;
+    border-radius: 4px;
+    margin-left: .5em;
+}
+
+.card{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.58);
+    color: yellow;
+
+
+}
+#modalButtonRow{
+    display: flex;
+    height: 2em;
+    align-items: flex-end;
+    margin-top: 2em;
+    justify-content: space-evenly;
+}
+
